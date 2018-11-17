@@ -1,0 +1,6 @@
+d:\dev\seven_w_c\seven_w\SevenW\obj\Debug\SevenW.csproj.CoreCompileInputs.cache
+d:\dev\seven_w_c\seven_w\SevenW\bin\Debug\SevenW.exe.config
+d:\dev\seven_w_c\seven_w\SevenW\bin\Debug\SevenW.exe
+d:\dev\seven_w_c\seven_w\SevenW\bin\Debug\SevenW.pdb
+d:\dev\seven_w_c\seven_w\SevenW\obj\Debug\SevenW.exe
+d:\dev\seven_w_c\seven_w\SevenW\obj\Debug\SevenW.pdb
