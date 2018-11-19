@@ -36,7 +36,18 @@ namespace SevenW
 
             return new Playcard();
         }
-    }
+
+		/// <summary>
+		/// TODO: IMPLEMENT
+		/// </summary>
+		/// <param name="p"></param>
+		internal bool updatePlayer(Player p)
+		{
+			/// Should return false is something goes wrong so that the caller can throw an exception
+			/// (as per original design)
+			return true;
+		}
+	}
 
     public class CardFactory
     {

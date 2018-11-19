@@ -15,7 +15,12 @@ namespace SevenW
 
             Playcard card = Playcard.ReadTest();
 
-            Console.ReadKey();
+			Wonder wonder1 = new Wonder("Göteborg", true, 1, new Playcard());
+			Wonder wonder2 = new Wonder("Kungälv", false, 1, new Playcard());
+			System.Console.WriteLine(wonder1);
+			System.Console.WriteLine(wonder2);
+
+			Console.ReadKey();
         }
     }
 }
