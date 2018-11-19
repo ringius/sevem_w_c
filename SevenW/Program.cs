@@ -12,8 +12,9 @@ namespace SevenW
 
             pelle.EastPlayer = olle;
             pelle.WestPlayer = kalle;
-            
-            Console.WriteLine(pelle.ToString());
+
+            Playcard card = Playcard.ReadTest();
+
             Console.ReadKey();
         }
     }
