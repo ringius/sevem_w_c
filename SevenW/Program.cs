@@ -1,11 +1,16 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore;
 
-namespace SevenW
+
+namespace SevenW.Models
 {
     class Program
     {
         static void Main(string[] args)
         {
+            CreateWebHostBuilder(args).Build().Run();
+
+            /*
             Player pelle = new Player(@"Pelle");
             Player olle = new Player("Olle");
             Player kalle = new Player("Kalle");
@@ -21,6 +26,13 @@ namespace SevenW
 			System.Console.WriteLine(wonder2);
 
 			Console.ReadKey();
+            */
+
         }
+
+        public static IWebHostBuilder CreateWebHostBuilder(string[] args) => 
+            WebHost.CreateDefaultBuilder(args).UseStartup<Startup>();
     }
+
 }
+

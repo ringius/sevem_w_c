@@ -1,7 +1,7 @@
 ﻿using System;
 
 
-namespace SevenW
+namespace SevenW.Models
 {
     public class Player
     {

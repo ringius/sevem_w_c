@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Web.Script;
 using System.Web.Script.Serialization;
 
-namespace SevenW
+namespace SevenW.Models
 {
     public class Playcard
     {
@@ -15,11 +15,25 @@ namespace SevenW
         private int id;
         private string name;
         private int age;
-        private Player owner;
+        //private Player;
 
         public int Id { get => id; set => id = value; }
         public string Name { get => name; set => name = value; }
         public int Age { get => age; set => age = value; }
+
+        public Playcard()
+        {
+            id = -1;
+            name = @"hata Göteborg";
+            age = 0;
+        }
+
+        public Playcard(int id, string name, int age)
+        {
+            this.id = id;
+            this.name = name;
+            this.age = age;
+        }
 
         public override string ToString()
         {
@@ -34,7 +48,7 @@ namespace SevenW
             Playcard card = new JavaScriptSerializer().Deserialize<Playcard> (test_string);
             Console.WriteLine(card.ToString());
 
-            return new Playcard();
+            return new Playcard(1, "test", 1);
         }
 
 		/// <summary>
